@@ -1,0 +1,200 @@
+.containerAside {
+  width: 350px;
+  border-right: solid 1px #383e49;
+  padding: 0 20px 0 20px;
+}
+
+.containerAside h1 {
+  font-size: 15px;
+}
+
+.containerAside p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.containerLogoInstagram {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logoName {
+  height: 60px;
+  margin-top: 10px;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.avatar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.avatar div {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);  ;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.avatar img {
+  width: 125px;
+  height: 125px;
+  background-color: #20212C;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.avatar h1 {
+  margin: 15px 0 0 0;
+}
+
+.avatar h2 {
+  margin: 5px 0 0 0;
+  font-weight: 300;
+  font-size: 15px;
+  color: #afafaf;
+}
+
+.containerFolow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 40px;
+}
+
+.containerFolow div {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.containerFolow div h3 {
+  font-weight: 300;
+  font-size: 15px;
+  color: #afafaf;
+  text-align: center;
+}
+
+.containerFolow div span {
+  font-weight: 800;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.containerFolow div:nth-child(2) {
+  background-color: #383e49;
+  height: 60px;
+  padding: 0;
+  width: 2px;
+}
+
+.containerFolow div:nth-child(4) {
+  background-color: #383e49;
+  height: 60px;
+  padding: 0;
+  width: 2px;
+}
+
+.horizon {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 20px 0; 
+  background-color: #383e49;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 0;
+}
+
+.navigation::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0e0e10;
+  border-radius: 5px;
+}
+
+.navigation::-webkit-scrollbar-thumb {
+  width: 1px;
+  background-color: #383e49;
+  border-radius: 5px;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  font-weight: 500;
+  color: #afafaf;
+  border-radius: 5px;
+}
+
+.link {
+  padding: 0 0 0 25px;
+}
+
+.navigation a img {
+  width: 18px;
+  margin-right: 20px;
+  filter: contrast(0%);
+}
+
+.isFocus {
+  background-color: #272A31;
+}
+
+.isPage {
+  margin-right: 20px;
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);  ;
+}
+
+.horizon_two {
+  display: flex;
+}
+
+.horizon_two div {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 20px 0; 
+  background-color: #383e49;
+}
+
+.logout {
+  display: flex;
+  padding: 0 0 0 25px;
+}
+
+.logout img {
+  width: 18px;
+  margin-right: 25px;
+  filter: contrast(0%);
+}
+
+@media (max-height: 768px) {
+  .navigation {
+    max-height: 180px;
+    overflow-y: scroll;
+  }
+}

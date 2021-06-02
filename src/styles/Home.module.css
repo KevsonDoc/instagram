@@ -1,0 +1,8 @@
+#containerApplication {
+  background-color: #20212C;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  color: #E5E5E7;
+}
