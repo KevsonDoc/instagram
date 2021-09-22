@@ -1,5 +1,6 @@
-import Link from 'next/link'
-import styles from './styles/Sidebar.module.css'
+import Link from 'next/link';
+
+import styles from './styles/Sidebar.module.css';
 
 const Sidebar = () => {
   return (
@@ -11,7 +12,7 @@ const Sidebar = () => {
         </section>
         <section className={styles.avatar}>
           <div>
-            <img src="https://avatars.githubusercontent.com/u/55449539?v=4" alt="Kevson Filipe" />
+            <img src="/zenitsu1.gif" alt="Kevson Filipe" />
           </div>
           <h1>Kevson Filipe</h1>
           <h2>@KFI</h2>
