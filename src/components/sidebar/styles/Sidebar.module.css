@@ -1,7 +1,13 @@
 .containerAside {
   width: 350px;
+  display: flex;
+  flex-direction: column;
   border-right: solid 1px #383e49;
   padding: 0 20px 0 20px;
+  position: fixed;
+  left: 0;
+  background-color: #20212C;
+  height: 100vh;
 }
 
 .containerAside h1 {

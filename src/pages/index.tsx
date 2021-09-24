@@ -1,7 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Sidebar from '../components/sidebar'
-import Feed from '../components/feed'
+import Head from 'next/head';
+
+import Feed from '../components/feed';
+import Sidebar from '../components/sidebar';
+import Story from '../components/story';
+import SuportBar from '../components/suportbar';
 
 export default function Home() {
   return (
@@ -13,9 +15,13 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
       </Head>
 
-      <main id={styles.containerApplication}>
+      <main id="containerApplication">
         <Sidebar />
-        <Feed />
+        <section id="main-fixed">
+          <SuportBar />
+          <Story />
+          <Feed />
+        </section>
       </main>
     </div>
   )
