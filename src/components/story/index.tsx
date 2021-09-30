@@ -1,13 +1,50 @@
+import {
+  MouseEvent,
+  useState,
+} from 'react';
+
 import styles from './styles.module.css';
 
 const Story: React.FC = () => {
+  const [ isDown, setIsDown ] = useState(false);
+  const [ startX, setStartX ] = useState(0);
+  const [ scrollLeft, setScrollLeft ] = useState(0);
+
+  function downEvent(event: MouseEvent<HTMLUListElement>) {
+    setIsDown(true);
+    setStartX(event.pageX - event.currentTarget.offsetLeft);
+    setScrollLeft(event.currentTarget.scrollLeft);
+  }
+
+  function leaveEevent(event: MouseEvent<HTMLUListElement>) {
+    setIsDown(false);
+  }
+
+  function upEvent(event: MouseEvent<HTMLUListElement>) {
+    setIsDown(false);
+  }
+
+  function moveEvent(event: MouseEvent<HTMLUListElement>) {
+    if (!isDown) return;
+    event.preventDefault();
+    const x = event.pageX - event.currentTarget.offsetLeft;
+    const walk = (x - startX) * 2.5;
+    event.currentTarget.scrollLeft = scrollLeft - walk;
+  }
+
+
   return (
     <section className={styles.container}>
       <div>
         <h1>Top Stories</h1>
         <a href="#">View All</a>
       </div>
-      <ul>
+      <ul
+        onMouseDown={downEvent}
+        onMouseLeave={leaveEevent}
+        onMouseUp={upEvent}
+        onMouseMove={moveEvent}
+      >
         <li>
           <img
             src="https://cosmonerd.com.br//uploads/2020/02/Tanjiro-Demon-Slayer.jpg"
